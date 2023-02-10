@@ -61,16 +61,34 @@ console.log(txt.length);
 // }
 // secret();
 
+// Переменные:age, myDog, guests, 
+// Функции: dogYears, makeTea, secret
+// Встроенные функции: cinsole.log, 
+// Аргументы:"Erl Grey", 4
+// Параметры: dogname, cups,, tea, guests
+
 
 // Дана строка 'JS'. Сделайте из нее строку 'js'.
+var stroke = 'JS';
+console.log(stroke.toLowerCase());
 
 
 // Дана строка 'я люблю JS!'. Вырежите из нее слово 
 // 'люблю' и слово 'javascript' тремя разными способами 
 // (через substr, substring, slice).
 
+let str = 'я люблю JS!';
+
+console.log(str.substr(2,5) + ' ' + str.substr(8,2));
+console.log(str.substring(2,7) + ' ' + str.substring(8,10));
+console.log(str.slice(2,7) + ' ' + str.slice(8,10));
+
+
+
 // Дана строка 'я люблю JS!'. Найдите позицию 
 // подстроки 'люблю'.
+
+console.log(str.search('люблю'));
 
 // Дана переменная txt, в которой хранится какой-либо текст. 
 // Реализуйте обрезание длинного текста по следующему 
@@ -80,16 +98,32 @@ console.log(txt.length);
 // троеточие '...'. В противном случае в переменную 
 // result запишем содержимое переменной txt.
 
+let text = 'Какая-то строка';
+let n = 5;
+let result;
+
+result = (text.length > n)?(text.substring(0,n) + '...'): text;
+console.log(result);
+
 // Для решения задач данного блока вам понадобятся следующие 
 // методы: replace.
 // Дана строка 'Я-люблю-JS!'. 
 // Замените все  '-' на '!' с помощью глобального 
 // поиска и замены.
 
+text = 'Я-люблю-JS!';
+console.log(text.replace(/-/g, '!'))
+
 // Дана строка 'я люблю JS'. С помощью метода split 
 // запишите каждое слово этой строки в отдельный элемент 
 // массива.
 
+let arr = str.split('');
+console.log(arr);
+
 // Дана строка 'привет мир'. С помощью метода split 
 // запишите каждый символ этой строки в отдельный элемент 
 // массива.
+
+text = 'привет мир';
+console.log(text.split(''));
